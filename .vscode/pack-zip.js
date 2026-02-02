@@ -1,11 +1,11 @@
-import { join } from "path";
 import {
-  readFileSync,
-  existsSync,
   createWriteStream,
+  existsSync,
   readdirSync,
+  readFileSync,
   statSync,
-} from "fs";
+} from "node:fs";
+import { join } from "node:path";
 import jszip from "jszip";
 
 export default async function packZip() {
